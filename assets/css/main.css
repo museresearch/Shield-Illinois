@@ -1439,7 +1439,7 @@ input, select, textarea {
 					top: calc(-2rem - 1px);
 					height: calc(2rem + 1px);
 				}
-
+/* 
 			#header .logo {
 				width: 4.75rem;
 				height: 4.75rem;
@@ -1448,7 +1448,7 @@ input, select, textarea {
 
 				#header .logo .icon:before {
 					font-size: 1.75rem;
-				}
+				} */
 
 			#header .content .inner {
 				padding: 2.5rem 1rem;
