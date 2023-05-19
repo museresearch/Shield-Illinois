@@ -124,32 +124,41 @@
 							<p>COVID-19 Testing in Illinois </p>
 							<p> SHIELD Illinois established its presence across the state. SHIELD testing occurred in all regions of the state, with a concentration in the Chicagoland area (see Figure 1). Zip codes outside of the Chicagoland area had somewhat lower total tests, ranging from a few hundred to a few thousands. In the Chicagoland area, the greatest concentration of a high number of tests was in the northern suburbs, such as Highland Park, Northbrook, Wheeling, and Des Plaines. The highest number of tests occurred in zip code 61761, with over 500,000 total tests. This data point was excluded because it is an outlier. The second-highest number of tests was in zip code 60540, which comprises most of Naperville, Illinois.</p>
 							
-							<div id="tableauViz"></div>
-							<body>
-								<!-- Other body elements -->
-							  
-								<!-- Embed Tableau Graph -->
-								<div id="tableauViz"></div>
-							  
-								<!-- Load Tableau JavaScript API -->
-								<script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
-							  
-								<!-- Initialize Tableau Visualization -->
-								<script>
-								  var placeholderDiv = document.getElementById("tableauViz");
-								  var url = "https://public.tableau.com/views/SHIELDzipcodemap/Dashboard1?:language=en-GB&:display_count=n&:origin=viz_share_link";
-								  var options = {
-									hideTabs: true,
-									width: "100%",
-									height: "800px",
-								  };
-							  
-								  var viz = new tableau.Viz(placeholderDiv, url, options);
-								</script>
-							  </body>
-							  
-
-
+							<div class="tableauPlaceholder" id="viz1680621806563" style="position: relative">
+								<noscript><a href="#"><img alt="Dashboard 1" src="https://public.tableau.com/static/images/SH/SHIELDzipcodemap/Dashboard1/1_rss.png" style="border: none" /></a></noscript>
+								<object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+								<param name="embed_code_version" value="3" />
+								<param name="site_root" value="" />
+								<param name="name" value="SHIELDzipcodemap/Dashboard1" />
+								<param name="tabs" value="no" />
+								<param name="toolbar" value="yes" />
+								<param name="static_image" value="https://public.tableau.com/static/images/SH/SHIELDzipcodemap/Dashboard1/1.png" />
+								<param name="animate_transition" value="yes" />
+								<param name="display_static_image" value="yes" />
+								<param name="display_spinner" value="yes" />
+								<param name="display_overlay" value="yes" />
+								<param name="display_count" value="yes" />
+								<param name="language" value="en-GB" /></object>
+							</div>
+						
+							<script type="text/javascript">
+								var divElement = document.getElementById('viz1680621806563');
+								var vizElement = divElement.getElementsByTagName('object')[0];
+								if ( divElement.offsetWidth > 800 ) {
+									vizElement.style.width='1000px';
+									vizElement.style.height='827px';
+								} else if ( divElement.offsetWidth > 500 ) {
+									vizElement.style.width='1000px';
+									vizElement.style.height='827px';
+								} else {
+									vizElement.style.width='100%';
+									vizElement.style.height='727px';
+								}
+								var scriptElement = document.createElement('script');
+								scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+								vizElement.parentNode.insertBefore(scriptElement, vizElement);
+							</script>
+							
 							<div id="news">
 								<h3>News</h3>
 								<p>This is the content for Sub-Tab 1.</p>
