@@ -1,4 +1,5 @@
 
+
 /* BG */
 
 	#bg {
@@ -27,7 +28,7 @@
 			background-image:		linear-gradient(to top, #{_palette(bg-overlay)}, #{_palette(bg-overlay)}),
 									url('../../images/overlay.png');
 			background-size:		auto,
-									300px 300px;
+									256px 256px;
 			background-position:	center,
 									center;
 			background-repeat:		no-repeat,
