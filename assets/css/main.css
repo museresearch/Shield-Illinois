@@ -929,6 +929,29 @@ input, select, textarea {
 				}
 
 /* Table */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: "\25BE"; /* Downward pointing triangle */
+    margin-left: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
@@ -1290,7 +1313,7 @@ input, select, textarea {
 				display: none;
 			}
 
-		 #header .logo {
+		 /* #header .logo {
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
@@ -1300,8 +1323,32 @@ input, select, textarea {
 
 			 #header .logo .icon:before {
 				font-size: 2rem;
-			} 
-
+			}  */
+			#header .logo {
+				width: 5.5rem;
+				height: 5.5rem;
+				line-height: 5.5rem;
+				border: solid 1px #ffffff;
+				border-radius: 100%;
+				/* Add the following properties to remove the background icon */
+				background: none;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 2.5rem;
+         		font-weight: bold;
+			}
+			
+			#header .logo img {
+				max-width: 100%;
+				max-height: 100%;
+				border-radius: 100%;
+			}
+			
+			#header .logo .icon:before {
+				font-size: 2.5rem;
+				/* You can remove this line if it's not relevant anymore */
+			}
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
@@ -1440,7 +1487,7 @@ input, select, textarea {
 					height: calc(2rem + 1px);
 				}
 
-			#header .logo {
+			/* #header .logo {
 				width: 4.75rem;
 				height: 4.75rem;
 				line-height: 4.75rem;
@@ -1448,7 +1495,20 @@ input, select, textarea {
 
 				#header .logo .icon:before {
 					font-size: 1.75rem;
+				} */
+
+				#header .logo {
+					width: 4.75rem;
+					height: 4.75rem;
+					line-height: 4.75rem;
+					font-size: 2.5rem;
+        font-weight: bold;
 				}
+			
+				#header .logo .icon:before {
+					font-size: 2rem;
+					/* You can remove this line if it's not relevant anymore */
+				}	
 
 			#header .content .inner {
 				padding: 2.5rem 1rem;
