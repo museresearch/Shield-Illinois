@@ -384,7 +384,8 @@
 					});
 
 			}
-
+			
+			
 		// Initialize.
 
 			// Hide main, articles.
@@ -397,16 +398,30 @@
 					$window.on('load', function() {
 						$main._show(location.hash.substr(1), true);
 					});
-					// If you want to close the dropdown when user clicks outside
-document.addEventListener('click', function (event) {
-    var dropdowns = document.getElementsByClassName('dropdown');
-    for (var i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i].querySelector('.dropdown-menu');
-        if (openDropdown && !dropdowns[i].contains(event.target)) {
-            openDropdown.style.display = 'none';
-        }
-    }
-});
+					
+					var dropdown = document.querySelector('.dropdown');
+					var dropdownMenu = document.querySelector('.dropdown-menu');
+					
+					dropdown.addEventListener('mouseover', function() {
+					  dropdownMenu.style.display = 'block';
+					});
+					
+					dropdown.addEventListener('mouseout', function() {
+					  dropdownMenu.style.display = 'none';
+					});
+									
+					
 
 
 })(jQuery);
+// var dropdown = document.querySelector('.dropdown');
+// 					var dropdownMenu = document.querySelector('.dropdown-menu');
+					
+// 					dropdown.addEventListener('mouseover', function() {
+// 					  dropdownMenu.classList.add('show');
+// 					});
+					
+// 					dropdown.addEventListener('mouseout', function() {
+// 					  dropdownMenu.classList.remove('show');
+// 					});
+
