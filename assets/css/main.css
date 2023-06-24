@@ -929,30 +929,32 @@ input, select, textarea {
 				}
 
 /* Table */
+
 .dropdown {
-    position: relative;
-}
+	position: relative;
+  }
+  
+  .dropdown-toggle::after {
+	content: "\25BE";
+	margin-left: 5px;
+  }
+  
+  .dropdown-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: transparent;
+	padding: 10px;
+	border-radius: 4px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+	display: block;
+  }
+  
 
-.dropdown-toggle::after {
-    content: "\25BE"; /* Downward pointing triangle */
-    margin-left: 5px;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-
+  
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
